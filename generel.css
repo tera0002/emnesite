@@ -1,0 +1,63 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: #fcf6e5;
+  color: #1a1919;
+}
+
+.logo {
+  width: 78.945px;
+  height: 79.353px;
+  flex-shrink: 0;
+}
+/* dette er display font */
+/* obs den skal afvige når jeg laver hero med beige og brun tekst (bliver lidt lort) */
+h1 {
+  font-family: "Grandstander", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* dette er paragraph */
+p {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* dette er h2 og a/links  */
+h2,
+a,
+:link {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+}
+/* 
+.ikon {
+  width: 36.849px;
+  height: 36.849px;
+  flex-shrink: 0;
+}
+footer {
+  width: 1440px;
+  height: 208px;
+  flex-shrink: 0;
+  color: #1a1919;
+  background-color: #948974;
+} */

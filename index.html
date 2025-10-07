@@ -4,31 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ten Pillars Coffee</title>
-    <!-- link stylesheets, google fonts og favivons -->
-    <!-- indsæt robots no follow fra tidligere opgave -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="generel.css" />
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img_ikoner/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img_ikoner/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img_ikoner/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img_ikoner/favicon/site.webmanifest" />
   </head>
+  <!-- kopier index head body og footer, når den er done -->
 
   <body>
-    <!-- opret clean index.html som ik er git.test index i denne
-      -->
-    <header></header>
+    <header>
+      <div class="logo">
+        <a href="/img_ikoner/logo_boenner.svg">
+          <img src="img_ikoner/logo_boenner.svg" alt="Logo" />
+        </a>
+      </div>
+
+      <nav>
+        <ul class="globalmenu">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="menukort.html">Menukort</a></li>
+          <li><a href="frivillige.html">Frivillige</a></li>
+          <li><a href="blog.html">Bønne-bloggen</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <!-- <span class="line"></span>
+          <span class="line"></span> -->
+        </button>
+      </nav>
+    </header>
 
     <main>
-      <!-- fokus mandag -->
+      <!-- fokus mandag indsæt fra layoutdiagram-->
+      <h1>skibidi bobbedi hopperploppper</h1>
       <section>
         <div>
           <h2>Kaffe der ikke tager hele din pause eller budget</h2>
-          <p>bla bla bla</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            ex, molestiae, eveniet quis deserunt hic sapiente excepturi
+            accusantium sed, repellat magni ullam sequi quibusdam obcaecati
+            molestias iusto reiciendis ad assumenda saepe expedita nihil maiores
+            repudiandae beatae. Error maxime itaque facilis praesentium quos,
+            magni minima pariatur facere quaerat possimus eaque voluptatem.
+          </p>
         </div>
         <img src="img/..." alt="billede af kaffe" />
+        <!-- indsæt billede når konverteret der stemmer overens med mockup -->
       </section>
 
       <section class="produktgalleri">
         <!-- indsæt denne under menukort når det er -->
       </section>
-      <section></section>
+
+      <section>
+        <p>ved ik hvad den her skal bruges til men nu er den her hehe</p>
+      </section>
     </main>
 
-    <footer></footer>
+    <!-- <footer>
+      <p>
+        Ten Pillars Coffee Guldbergsgade 29N 2200 København N CVR-nr: 45 17 47
+        78 Telefon: 23 27 60 92 Mail: studieliv@ek.dk
+      </p>
+
+      <p>
+        Åbningstider Mandag - onsdag 08.00 - 14.00 Torsdag 08.00 - 13.00 Fredag
+        Lukket Find vej >>
+      </p>
+
+      <img src="img_ikoner/facebook ikon.svg" alt="facebook" class="ikon" />
+      <img src="img_ikoner/insta ikon.svg" alt="instagram" class="ikon" />
+    </footer> -->
+    <script src="menu.js"></script>
   </body>
 </html>
