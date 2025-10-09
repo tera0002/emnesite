@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ten Pillars Coffee</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="generel.css" />
     <meta name="robots" content="noindex" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,8 +37,8 @@
   <body>
     <header>
       <div class="logo">
-        <a href="/img_ikoner/logo_boenner.svg">
-          <img src="img_ikoner/logo_boenner.svg" alt="Logo" />
+        <a href="index.html">
+          <img src="img_ikoner/tpc_logo.svg" alt="Logo" />
         </a>
       </div>
 
@@ -54,54 +54,127 @@
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
-          <!-- <span class="line"></span>
-          <span class="line"></span> -->
+          <!-- mangler også noget med java komble under menu vscode -->
+          <!-- brødkrummesti er måske ikke nødvendig? -->
         </button>
       </nav>
     </header>
 
     <main>
-      <!-- fokus mandag indsæt fra layoutdiagram-->
-      <h1>skibidi bobbedi hopperploppper</h1>
-      <section>
+      <section class="liveknap">
+        <!-- indsæt cirkel grøn/orange/rød -->
+        <p>Åbent / Kort ventetid</p>
+      </section>
+
+      <section class="hero">
+        <h1>
+          Velkommen til EK's <br />
+          studenterdrevne kaffebar!
+        </h1>
+      </section>
+
+      <section class="grid_2-1">
         <div>
           <h2>Kaffe der ikke tager hele din pause eller budget</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            ex, molestiae, eveniet quis deserunt hic sapiente excepturi
-            accusantium sed, repellat magni ullam sequi quibusdam obcaecati
-            molestias iusto reiciendis ad assumenda saepe expedita nihil maiores
-            repudiandae beatae. Error maxime itaque facilis praesentium quos,
-            magni minima pariatur facere quaerat possimus eaque voluptatem.
+            Her finder du information om vores åbningstider og kaffebarens
+            populære tidspunkter, så du kan nå din daglige kop kaffe til en
+            rimelig pris - uden at komme for sent til undervisning. Kaffebaren
+            er studenterdrevet af frivillige fra Erhvervsakademi København, der
+            brænder for at skabe et uformelt og roligt opholdssted for os alle.
+            Her er plads til hygge, studiearbejde og dejlig brandvarm kaffe!
+            Alle er velkommen Kh. de frivillige
           </p>
         </div>
-        <img src="img/..." alt="billede af kaffe" />
-        <!-- indsæt billede når konverteret der stemmer overens med mockup -->
+        <div>
+          <img src="img_ikoner/klokkeikon.svg" alt="ur" class="ikon" />
+          <a href="info.html" class="CTA_link">Åbningstider</a>
+
+          <img src="img_ikoner/kaffeikon.svg" alt="kaffekop" class="ikon" />
+          <a href="menukort.html" class="CTA_link">Se udvalg</a>
+          <!--  de to kaffe/tids-ikoner,  skal laves flex/grid på -->
+        </div>
       </section>
 
-      <section class="produktgalleri">
-        <!-- indsæt denne under menukort når det er -->
+      <section class="grid_2-1">
+        <div>
+          <h2>Læs senest opslag om frisk kværnet kaffe</h2>
+          <p>
+            Der er noget helt særligt ved lyden af kaffekværnen tidligt om
+            morgenen. Den varsler ikke bare en ny dag, men også et øjeblik af ro
+            og nydelse. Duften af de friskknuste bønner breder sig i køkkenet og
+            vækker sanserne, før den første dråbe har ramt koppen. Det er som
+            om, verden står stille et øjeblik, mens man venter. For forskellen
+            på færdigmalet kaffe. og friskkværnet kan virkelig smages. Aromaen
+            er dybere...
+          </p>
+          <!-- indsæt CTA til bønne-bloggen -->
+        </div>
+
+        <div class="order">
+          <img src="img_ikoner/tpcbillede.png" alt="billede af tcp kaffe" />
+          <!-- skal ændres til webP og format -->
+        </div>
       </section>
 
-      <section>
-        <p>ved ik hvad den her skal bruges til men nu er den her hehe</p>
+      <section class="grid_1-1">
+        <div>
+          <h2>Baristaerne bag baren</h2>
+          <p>
+            Bag kaffebaren står en barista, men ikke en hvilken som helst. Det
+            er en medstuderende, der frivilligt har valgt at bruge sin tid på at
+            skabe hygge, energi og fællesskab. Når maskinen damper, og duften af
+            friskbrygget kaffe breder sig, er det ikke kun en kop, der bliver
+            serveret -- det er et smil og en oplevelse. Rollen som barista i
+            EK's studenterdrevne kaffebar handler om meget mere end kaffe: det
+            er teamwork, ansvar og glæden ved at møde nye mennesker. Her lærer
+            man at mestre latte art side om side med at balancere travlhed og
+            godt humør. Og vigtigst af alt: de er med til at skabe et
+            samlingspunkt for hele studiemiljøet
+          </p>
+          <!-- indsæt CTA til bønne-bloggen -->
+        </div>
+
+        <div>
+          <img src="img_ikoner/studerendeforside.png" alt="studerende" />
+          <!-- skal ændres til webP og format -->
+        </div>
       </section>
     </main>
 
-    <!-- <footer>
-      <p>
-        Ten Pillars Coffee Guldbergsgade 29N 2200 København N CVR-nr: 45 17 47
-        78 Telefon: 23 27 60 92 Mail: studieliv@ek.dk
-      </p>
+    <footer>
+      <section class="flex_1-1">
+        <div id="førstevenstre">
+          <p>
+            Ten Pillars Coffee
+            <br />
+            Guldbergsgade 29N 2200 Kbh N
+            <br />
+            CVR-nr: 45 17 47 78 <br />Telefon: 23 27 60 92 <br />
+            Mail: studieliv@ek.dk
+          </p>
+        </div>
 
-      <p>
-        Åbningstider Mandag - onsdag 08.00 - 14.00 Torsdag 08.00 - 13.00 Fredag
-        Lukket Find vej >>
-      </p>
+        <div class="ikon-center">
+          <img src="img_ikoner/logo_boenner.svg" alt="logo_boenner" />
+        </div>
 
-      <img src="img_ikoner/facebook ikon.svg" alt="facebook" class="ikon" />
-      <img src="img_ikoner/insta ikon.svg" alt="instagram" class="ikon" />
-    </footer> -->
+        <div id="andenhøjre">
+          <p>
+            Åbningstider
+            <br />Mandag - onsdag: 08.00 - 14.00 <br />Torsdag: 08.00 - 13.00
+            <br />
+            Fredag: Lukket
+            <!-- Find vej - indsæt som link til info-site -->
+          </p>
+        </div>
+        <div class="ikon-container">
+          <img src="img_ikoner/facebook ikon.svg" alt="facebook" class="ikon" />
+          <img src="img_ikoner/insta ikon.svg" alt="instagram" class="ikon" />
+        </div>
+      </section>
+    </footer>
+
     <script src="menu.js"></script>
   </body>
 </html>

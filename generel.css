@@ -1,3 +1,5 @@
+/* CSS styling (generel.css) */
+
 /*************** Reset *********************/
 * {
   margin: 0;
@@ -9,20 +11,87 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  padding: 10px;
 }
+
+/***************************** CSS global og burgermenu START ***************************/
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #11544a;
+  box-shadow: 0 10px 10px #9489745d;
+}
+
+.logo img {
+  width: 232px;
+  height: 72px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.globalmenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.globalmenu li {
+  margin-right: 20px;
+}
+
+.globalmenu li:last-child {
+  margin-right: 0;
+}
+
+.globalmenu a {
+  display: block;
+  padding: 20px;
+  color: #1a1919;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-size: 1.4em;
+}
+
+.globalmenu a:hover {
+  color: #fcf6e5;
+  text-decoration: underline;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+/* mangler at tilpasse burgermenu */
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+/***************************** CSS global og burgermenu SLUT ***************************/
 
 body {
   background-color: #fcf6e5;
   color: #1a1919;
 }
 
-.logo {
-  width: 78.945px;
-  height: 79.353px;
-  flex-shrink: 0;
-}
-/* dette er display font */
-/* obs den skal afvige når jeg laver hero med beige og brun tekst (bliver lidt lort) */
 h1 {
   font-family: "Grandstander", cursive;
   font-optical-sizing: auto;
@@ -30,34 +99,101 @@ h1 {
   font-style: normal;
 }
 
-/* dette er paragraph */
-p {
-  font-family: "Saira", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
 /* dette er h2 og a/links  */
 h2,
-a,
+ul,
+li,
 :link {
   font-family: "Saira Condensed", sans-serif;
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
+  margin: 10px;
+  padding: 10px;
 }
-/* 
+
+p {
+  font-family: "Saira", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-size: 1.2em;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.6;
+  text-align: left;
+  /* font-variation-settings: "wdth" 100; */
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  /* padding-bottom: 10px; */
+  overflow-wrap: break-word;
+  hyphens: auto;
+  text-wrap: pretty;
+  /* tjek om text-wrap pretty virker?? */
+}
+
 .ikon {
-  width: 36.849px;
-  height: 36.849px;
-  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
 }
+.liveknap {
+  display: grid;
+  place-content: end;
+  padding: 10px;
+  /* mangler at indsætte selve ikonet eller formen */
+}
+
+.hero {
+  display: grid;
+  /* SKAL DISPLAY IKKE VÆRE I LAYOUT SITE? */
+  place-items: center;
+  justify-items: start;
+  width: 100%;
+  height: 200px;
+  background-image: url(img_ikoner/halo.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero h1 {
+  /* display: grid; */
+  /* SKAL DISPLAY IKKE VÆRE I LAYOUT SITE? */
+  color: #fcf6e5;
+  /* background-color: #3333338e; */
+  text-align: left;
+  font-size: 3em;
+  padding: 60px;
+}
+
+.CTA_link {
+  display: grid;
+  color: #fcf6e5;
+  background-color: #11544a;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 10px;
+  width: 100%;
+}
+
+.CTA_link:hover {
+  background-color: #fcf6e5;
+  border: 2px solid #11544a;
+  color: #11544a;
+}
+
 footer {
-  width: 1440px;
-  height: 208px;
-  flex-shrink: 0;
+  font-family: "Saira", sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.6;
   color: #1a1919;
+  text-align: start;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  padding: 50px;
+  margin-top: 50px;
   background-color: #948974;
-} */
+  box-shadow: 2px 2px 4px 4px #9489745d;
+}
