@@ -58,7 +58,6 @@ img {
     bottom: 0px;
     gap: 20px;
   }
-  /* indsæt alt heroppe og tilføje efterfølgende ændringer til desktop version */
 
   /* MOBIL MEDIA START */
   @media screen and (max-width: 800px) {
