@@ -2,7 +2,7 @@
 
 main {
   max-width: 1440px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 img {
@@ -11,37 +11,85 @@ img {
   display: block;
 }
 
-.grid_2-1 .ikon {
-  justify-self: center;
-  background-color: yellow;
+/* MOBIL MEDIA START */
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: yellow;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+
+  .hero h1 {
+    padding: 20px;
+    font-size: 2em;
+  }
+  /* SLUT indsat fra menu style css ift opsætning af global og burgermenu */
 }
 
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-.grid_1-2 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-}
-.grid_2-1 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
-}
+/* DESKTOP MEDIA START */
 
-.order {
-  order: -1;
-}
-.grid_2-1 img .grid_1-1 img,
-.grid_1-2 img {
-  display: grid;
-  height: 100%;
-  object-fit: cover;
+@media (width>=800px) {
+  /* ur + kaffeikon forside */
+  .grid_2-1 .ikon {
+    justify-self: center;
+    width: auto;
+  }
 
-  /* mangler er få centreret indhold begge retninger */
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  .order {
+    order: -1;
+  }
 
   /* bønne centrering i footer */
   .ikon-center {
@@ -58,74 +106,21 @@ img {
     bottom: 0px;
     gap: 20px;
   }
-
-  /* MOBIL MEDIA START */
-  @media screen and (max-width: 800px) {
-    .menu {
-      display: none;
-    }
-    .burger {
-      display: block;
-      background-color: transparent;
-      border: 0;
-    }
-    .burger.active .line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-      transition: 0.2s linear;
-    }
-
-    .burger.active .line:nth-child(2) {
-      opacity: 0;
-      transition: 0.15s linear;
-    }
-
-    .burger.active .line:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-      transition: 0.2s linear;
-    }
-
-    nav.active .menu {
-      display: block;
-      background-color: yellow;
-      position: absolute;
-      top: 94px;
-      left: 0;
-      width: 100%;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-    }
-
-    nav.active .menu li {
-      margin: 10px 20px;
-    }
-
-    nav.active .menu a {
-      font-size: 24px;
-    }
-
-    /* SLUT indsat fra menu style css ift opsætning af global og burgermenu */
-  }
-
-  /* DESKTOP MEDIA START */
-
-  @media (width>=800px) {
-  }
-
-  .CTA_link {
-    display: grid;
-    align-items: center;
-    place-content: center;
-  }
-
-  /* den tager fat i selve indholdet, det skal være div der centrerer alt indhold    */
-  .ikon {
-    display: grid;
-    align-items: center;
-    object-fit: cover;
-  }
 }
-/* DESKTOP MEDIA SLUT */
+.CTA_link {
+  display: grid;
+  align-items: center;
+  place-content: center;
+}
 
+/* den tager fat i selve indholdet, det skal være div der centrerer alt indhold    */
+.ikon {
+  display: grid;
+  align-items: center;
+  object-fit: cover;
+}
+
+/* DESKTOP MEDIA SLUT */
 /* footer flexbox */
 .flex_1-1 {
   display: flex;

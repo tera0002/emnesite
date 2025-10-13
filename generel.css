@@ -99,17 +99,16 @@ h1 {
   font-style: normal;
 }
 
-/* dette er h2 og a/links  */
+/* dette er h2 og a/links har slettet ul og li  */
 h2,
 ul,
-li,
 :link {
   font-family: "Saira Condensed", sans-serif;
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
-  /* margin: 10px;
-  padding: 10px; */
+  margin: 10px;
+  padding: 10px;
 }
 
 p {
@@ -158,7 +157,7 @@ ul.li.h2 {
   background-image: url(img_ikoner/halo.jpg);
   background-size: cover;
   background-position: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .hero h1 {
