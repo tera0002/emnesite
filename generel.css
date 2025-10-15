@@ -99,9 +99,10 @@ h1 {
   font-style: normal;
 }
 
-/* dette er h2 og a/links har slettet ul og li  */
+/* dette er h2 og links har slettet ul og li  */
 h2,
 ul,
+li,
 :link {
   font-family: "Saira Condensed", sans-serif;
   font-weight: 600;
@@ -109,6 +110,26 @@ ul,
   text-transform: uppercase;
   margin: 10px;
   padding: 10px;
+}
+
+.ul-container {
+  border: 2px solid #1a1919;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.ul-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* 
+.ul-container li {
+  margin-bottom: 8px;
+} */
+
+.åbningstidertider {
+  text-align: end;
 }
 
 p {
@@ -131,10 +152,10 @@ p {
   /* tjek om text-wrap pretty virker?? */
 }
 
-ul.li.h2 {
+/* ul.li.h2 {
   margin: 0px;
   padding: 0px;
-}
+} */
 
 .ikon {
   width: 70px;

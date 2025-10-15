@@ -11,6 +11,12 @@ img {
   display: block;
 }
 
+.ul-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
 /* MOBIL MEDIA START */
 @media screen and (max-width: 800px) {
   .menu {
@@ -105,6 +111,16 @@ img {
     right: 0px;
     bottom: 0px;
     gap: 20px;
+  }
+
+  .åbningstiderdage {
+    display: grid;
+    align-items: start;
+  }
+
+  .åbningstidertider {
+    display: grid;
+    place-content: end;
   }
 }
 .CTA_link {
