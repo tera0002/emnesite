@@ -17,6 +17,12 @@ img {
   gap: 20px;
 }
 
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 0; måske div til kontaktos og farvernes betydning så de kan få alignes ligesom ul-diver? */
+}
+
 /* MOBIL MEDIA START */
 @media screen and (max-width: 800px) {
   .menu {

@@ -108,28 +108,38 @@ li,
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
-  margin: 10px;
-  padding: 10px;
+  margin: 0px;
+  padding: 0px;
 }
 
-.ul-container {
+.ul-container,
+.populaeretidspunkter {
   border: 2px solid #1a1919;
   border-radius: 20px;
   margin: 10px;
+  padding: 20px;
 }
 
 .ul-container ul {
   list-style: none;
+  line-height: 2;
   padding: 0;
   margin: 0;
 }
-/* 
+
 .ul-container li {
   margin-bottom: 8px;
-} */
+}
 
 .åbningstidertider {
   text-align: end;
+}
+
+.vejvisningskort {
+  width: 200px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -151,11 +161,6 @@ p {
   text-wrap: pretty;
   /* tjek om text-wrap pretty virker?? */
 }
-
-/* ul.li.h2 {
-  margin: 0px;
-  padding: 0px;
-} */
 
 .ikon {
   width: 70px;
