@@ -17,9 +17,18 @@ img {
   gap: 20px;
 }
 
+.ul-container.no-radius {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  border: 0;
+  border-radius: 0;
+}
+
 .grid_1-1-1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: top;
   /* grid-template-rows: 0; måske div til kontaktos og farvernes betydning så de kan få alignes ligesom ul-diver? */
 }
 
@@ -127,6 +136,19 @@ img {
   .åbningstidertider {
     display: grid;
     place-content: end;
+  }
+
+  .kontakttekst,
+  .tekstcirkler {
+    display: grid;
+    place-content: start;
+  }
+
+  .cirkler,
+  .kontaktikoner {
+    display: grid;
+    place-content: center;
+    /* background-color: yellowgreen; */
   }
 }
 .CTA_link {

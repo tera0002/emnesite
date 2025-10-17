@@ -108,13 +108,14 @@ li,
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
+  text-decoration: none;
   margin: 0px;
   padding: 0px;
 }
 
 .ul-container,
 .populaeretidspunkter {
-  border: 2px solid #1a1919;
+  border: 4px solid #11544a;
   border-radius: 20px;
   margin: 10px;
   padding: 20px;
@@ -134,12 +135,59 @@ li,
 .åbningstidertider {
   text-align: end;
 }
+.ul-container.no-radius {
+  color: #1a1919;
+  /* gap: 20px; */
+  /* line-height: 2em; */
+  /* background-color: aquamarine; */
+}
+
+.kontaktikoner {
+  width: 40px;
+  height: 40px;
+}
+
+ul.kontakttekst li :link {
+  line-height: 2.2em;
+  color: #1a1919;
+}
+
+ul.kontakttekst a:visited {
+  color: #11544a;
+}
+
+ul.kontakttekst li :hover {
+  color: #1a1919;
+  text-decoration: underline;
+}
+
+ul.kontakttekst li :active {
+  color: #1a1919;
+  font-weight: bold;
+}
 
 .vejvisningskort {
   width: 200px;
   height: 300px;
   margin: 0;
   padding: 0;
+}
+
+.cirkler li {
+  width: 32px;
+  height: 32px;
+  clip-path: circle(50%);
+}
+
+.groen {
+  background-color: green;
+  padding: auto;
+}
+.orange {
+  background-color: orange;
+}
+.rød {
+  background-color: red;
 }
 
 p {
@@ -161,11 +209,12 @@ p {
   text-wrap: pretty;
   /* tjek om text-wrap pretty virker?? */
 }
-
+/* footer og forside ikoner */
 .ikon {
   width: 70px;
   height: 70px;
 }
+
 .liveknap {
   display: grid;
   place-content: end;

@@ -96,30 +96,40 @@
 
         <div>
           <h2>Populære tidspunkter</h2>
-          <!-- ændre billede nedenfor at skema men test border-radius -->
           <img
-            src="img_ikoner/studerendeforside.png"
+            src="img_ikoner/populaeretidspunktergraf.svg"
             alt="Populære tidspunkter billede"
             class="populaeretidspunkter"
           />
         </div>
       </section>
 
+      <!-- mangler at lave CSS på grid_1-1-1 og præcisere størrelser på ikoner, billeder etc ligesom under populære åbningstider -->
       <section class="grid_1-1-1">
         <div>
           <h2>Kontakt os</h2>
-          <div class="ul-container">
-            <ul class="ikoner">
-              <img src="img_ikoner/insta ikon.svg" alt="instagram" />
-              <img src="img_ikoner/mailikon.svg" alt="mail" />
-              <img src="img_ikoner/facebook ikon.svg" alt="facebook" />
-            </ul>
 
+          <div class="ul-container no-radius">
+            <ul class="kontaktikoner">
+              <br />
+              <br />
+              <br />
+              <li><img src="img_ikoner/insta ikon.svg" alt="instagram" /></li>
+              <li><img src="img_ikoner/mailikon.svg" alt="mail" /></li>
+              <li><img src="img_ikoner/facebook ikon.svg" alt="facebook" /></li>
+            </ul>
             <ul class="kontakttekst">
-              <p>@tenpillarscoffe</p>
-              <p>Ten Pillars Frivilige</p>
-              <!-- bør være fb link i stedet for p -->
-              <p>studieliv@ek.dk</p>
+              <li>
+                <a href="https://www.instagram.com/tenpillarscoffee/"
+                  >@tenpillarscoffee</a
+                >
+              </li>
+              <li>
+                <a href="https://www.facebook.com/groups/1181542280094288"
+                  >Ten Pillars frivillige</a
+                >
+              </li>
+              <li><a href="mailto:studieliv@ek.dk"> studieliv@ek.dk</a></li>
             </ul>
           </div>
         </div>
@@ -134,17 +144,17 @@
         </div>
         <div>
           <h2>Farvernes betydning</h2>
-          <div class="ul-container">
-            <ul class="knap">
-              <p>cirkel grøn</p>
-              <p>cirkel orange</p>
-              <p>cirkel rød</p>
+          <div class="ul-container no-radius">
+            <ul class="cirkler">
+              <li class="groen"></li>
+              <li class="orange"></li>
+              <li class="rød"></li>
             </ul>
 
-            <ul class="tekst">
-              <p>Kort ventetid</p>
-              <p>Længere ventetid</p>
-              <p>Vi har lukket</p>
+            <ul class="tekstcirkler">
+              <li>Kort ventetid</li>
+              <li>Længere ventetid</li>
+              <li>Vi har lukket</li>
             </ul>
           </div>
         </div>
@@ -176,6 +186,7 @@
             Fredag: Lukket
             <!-- Find vej - indsæt som link til info-site -->
           </p>
+          <a href="info.html"> Find Vej</a>
         </div>
         <div class="ikon-container">
           <img src="img_ikoner/facebook ikon.svg" alt="facebook" class="ikon" />
