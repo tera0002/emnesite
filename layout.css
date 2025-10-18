@@ -11,27 +11,6 @@ img {
   display: block;
 }
 
-.ul-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.ul-container.no-radius {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-  border: 0;
-  border-radius: 0;
-}
-
-.grid_1-1-1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: top;
-  /* grid-template-rows: 0; måske div til kontaktos og farvernes betydning så de kan få alignes ligesom ul-diver? */
-}
-
 /* MOBIL MEDIA START */
 @media screen and (max-width: 800px) {
   .menu {
@@ -46,17 +25,14 @@ img {
     transform: rotate(45deg) translate(5px, 5px);
     transition: 0.2s linear;
   }
-
   .burger.active .line:nth-child(2) {
     opacity: 0;
     transition: 0.15s linear;
   }
-
   .burger.active .line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
     transition: 0.2s linear;
   }
-
   nav.active .menu {
     display: block;
     background-color: yellow;
@@ -67,88 +43,105 @@ img {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
   }
-
   nav.active .menu li {
     margin: 10px 20px;
   }
-
   nav.active .menu a {
     font-size: 24px;
   }
-
   .hero h1 {
     padding: 20px;
     font-size: 2em;
   }
+}
 
-  /* SLUT indsat fra menu style css ift opsætning af global og burgermenu */
+/* SLUT indsat fra menu style css ift opsætning af global og burgermenu */
 
-  /* DESKTOP MEDIA START */
+/* DESKTOP MEDIA START */
 
-  @media (width>=800px) {
-    /* ur + kaffeikon forside */
-    .grid_2-1 .ikon {
-      justify-self: center;
-      width: auto;
-    }
-    .grid_1-1 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    .grid_1-2 {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 20px;
-    }
-    .grid_2-1 {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 20px;
-    }
-
-    .order {
-      order: -1;
-    }
-
-    /* bønne centrering i footer */
-    .ikon-center {
-      display: flex;
-    }
-
-    /* nedenstående er ikon i footer */
-    .ikon-container {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end;
-      position: absolute;
-      right: 0px;
-      bottom: 0px;
-      gap: 20px;
-    }
-
-    .åbningstiderdage {
-      display: grid;
-      align-items: start;
-    }
-
-    .åbningstidertider {
-      display: grid;
-      place-content: end;
-    }
-
-    .kontakttekst,
-    .tekstcirkler {
-      display: grid;
-      place-content: start;
-    }
-
-    .cirkler,
-    .kontaktikoner {
-      display: grid;
-      place-content: center;
-    }
+@media (width>=800px) {
+  /* ur + kaffeikon forside */
+  .grid_2-1 .ikon {
+    justify-self: center;
+    width: auto;
   }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+  .ul-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .ul-container.no-radius {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: top;
+  }
+
+  .order {
+    order: -1;
+  }
+
+  /* bønne centrering i footer */
+  .ikon-center {
+    display: flex;
+  }
+
+  /* nedenstående er ikon i footer */
+  .ikon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    gap: 20px;
+  }
+
+  .åbningstiderdage {
+    display: grid;
+    align-items: start;
+  }
+
+  .åbningstidertider {
+    display: grid;
+    place-content: end;
+  }
+
+  .kontakttekst,
+  .tekstcirkler {
+    display: grid;
+    place-content: start;
+  }
+
+  .cirkler,
+  .kontaktikoner {
+    display: grid;
+    place-content: center;
+  }
+
   .CTA_link {
     display: grid;
     align-items: center;
@@ -162,6 +155,7 @@ img {
     object-fit: cover;
   }
 }
+
 .produktgalleri {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
