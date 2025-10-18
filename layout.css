@@ -80,91 +80,146 @@ img {
     padding: 20px;
     font-size: 2em;
   }
+
   /* SLUT indsat fra menu style css ift opsætning af global og burgermenu */
-}
 
-/* DESKTOP MEDIA START */
+  /* DESKTOP MEDIA START */
 
-@media (width>=800px) {
-  /* ur + kaffeikon forside */
-  .grid_2-1 .ikon {
-    justify-self: center;
-    width: auto;
+  @media (width>=800px) {
+    /* ur + kaffeikon forside */
+    .grid_2-1 .ikon {
+      justify-self: center;
+      width: auto;
+    }
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .grid_1-2 {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+    }
+    .grid_2-1 {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+    }
+
+    .order {
+      order: -1;
+    }
+
+    /* bønne centrering i footer */
+    .ikon-center {
+      display: flex;
+    }
+
+    /* nedenstående er ikon i footer */
+    .ikon-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      gap: 20px;
+    }
+
+    .åbningstiderdage {
+      display: grid;
+      align-items: start;
+    }
+
+    .åbningstidertider {
+      display: grid;
+      place-content: end;
+    }
+
+    .kontakttekst,
+    .tekstcirkler {
+      display: grid;
+      place-content: start;
+    }
+
+    .cirkler,
+    .kontaktikoner {
+      display: grid;
+      place-content: center;
+    }
   }
-
-  .grid_1-1 {
+  .CTA_link {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  .grid_1-2 {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-  }
-  .grid_2-1 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-  }
-
-  .order {
-    order: -1;
-  }
-
-  /* bønne centrering i footer */
-  .ikon-center {
-    display: flex;
-  }
-
-  /* nedenstående er ikon i footer */
-  .ikon-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    gap: 20px;
-  }
-
-  .åbningstiderdage {
-    display: grid;
-    align-items: start;
-  }
-
-  .åbningstidertider {
-    display: grid;
-    place-content: end;
-  }
-
-  .kontakttekst,
-  .tekstcirkler {
-    display: grid;
-    place-content: start;
-  }
-
-  .cirkler,
-  .kontaktikoner {
-    display: grid;
+    align-items: center;
     place-content: center;
-    /* background-color: yellowgreen; */
+  }
+
+  /* den tager fat i selve indholdet, det skal være div der centrerer alt indhold    */
+  .ikon {
+    display: grid;
+    align-items: center;
+    object-fit: cover;
   }
 }
+.produktgalleri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.produktgalleri li {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 16px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.produktgalleri img {
+  width: 313px;
+  height: 337px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.produkt-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.produkt-info-row h2 {
+  font-size: 1.2em;
+  margin: 0;
+  text-align: left;
+}
+
+.produkt-info-row .pris {
+  margin: 0;
+  font-weight: bold;
+  text-align: right;
+}
+
+.beskrivelse {
+  margin: 0 0 12px 0;
+  color: #444;
+  font-size: 1em;
+}
+
 .CTA_link {
-  display: grid;
-  align-items: center;
-  place-content: center;
+  align-self: flex-start;
+  margin-top: auto;
 }
-
-/* den tager fat i selve indholdet, det skal være div der centrerer alt indhold    */
-.ikon {
-  display: grid;
-  align-items: center;
-  object-fit: cover;
-}
-
 /* DESKTOP MEDIA SLUT */
+
 /* footer flexbox */
 .flex_1-1 {
   display: flex;

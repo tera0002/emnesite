@@ -99,7 +99,6 @@ h1 {
   font-style: normal;
 }
 
-/* dette er h2 og links har slettet ul og li  */
 h2,
 ul,
 li,
@@ -261,6 +260,11 @@ p {
   background-color: #fcf6e5;
   border: 2px solid #11544a;
   color: #11544a;
+}
+
+.CTA_link.cnc {
+  width: 50%;
+  max-width: 250px;
 }
 
 footer {
