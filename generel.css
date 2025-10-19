@@ -28,8 +28,8 @@ header {
 }
 
 .logo img {
-  width: 232px;
-  height: 72px;
+  width: 252px;
+  height: 92px;
 }
 
 nav {
@@ -94,11 +94,12 @@ body {
 
 h1 {
   font-family: "Grandstander", cursive;
-  font-optical-sizing: auto;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 700;
   font-style: normal;
+  line-height: 1.46;
   color: #1a1919;
-  padding: 15px;
+  /* padding: 15px; */
   margin: 15px;
 }
 
@@ -109,6 +110,7 @@ li,
   font-family: "Saira Condensed", sans-serif;
   font-weight: 600;
   font-style: normal;
+  font-size: 24px;
   color: #1a1919;
   text-transform: uppercase;
   text-decoration: none;
@@ -116,6 +118,9 @@ li,
   padding: 0px;
 }
 
+h2 {
+  line-height: 1.6;
+}
 h1,
 h2 {
   padding: 15px;
@@ -155,9 +160,10 @@ h2 {
   /* background-color: aquamarine; */
 }
 
-.kontaktikoner {
-  width: 40px;
-  height: 40px;
+.kontaktikoner li {
+  width: 50px;
+  height: 50px;
+  margin: 6px;
 }
 
 ul.kontakttekst li :link {
@@ -191,11 +197,10 @@ ul.kontakttekst li :active {
   height: 32px;
   clip-path: circle(50%);
   position: relative;
+  margin: 12px;
 }
-
 .groen {
   background-color: #11544a;
-  padding: auto;
 }
 .orange {
   background-color: #b57442;
@@ -269,9 +274,9 @@ p {
   /* SKAL DISPLAY IKKE VÆRE I LAYOUT SITE? */
   place-items: center;
   justify-items: start;
-  width: 100%;
-  height: 200px;
-  background-image: url(img_ikoner/halo.jpg);
+  /* width: 100%;
+  height: 200px; */
+  background-image: url(img_ikoner/hero.webp);
   background-size: cover;
   background-position: center;
   /* position: relative; */
@@ -293,6 +298,7 @@ p {
   background-color: #11544a;
   border-radius: 30px;
   text-decoration: none;
+  font-size: 20px;
   text-align: center;
   padding: 8px 16px;
   margin: 10px;
@@ -308,6 +314,7 @@ p {
 .CTA_link.cnc {
   width: 50%;
   max-width: 250px;
+  font-size: 20px;
 }
 
 footer {
