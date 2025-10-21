@@ -25,6 +25,7 @@ header {
   padding: 20px;
   background-color: #11544a;
   box-shadow: 0 10px 10px #9489745d;
+  margin-bottom: 25px;
 }
 
 .logo img {
@@ -122,6 +123,7 @@ li,
 h2 {
   line-height: 1.6;
   padding: 15px;
+  margin-top: 20px;
   margin: 15px;
 }
 
@@ -184,6 +186,7 @@ ul.kontakttekst li :active {
 }
 
 .vejvisningskort {
+  display: grid;
   width: 200px;
   /* height: 300px; */
   height: auto;
@@ -250,21 +253,7 @@ p {
 .ikon {
   width: 70px;
   height: 70px;
-}
-
-.liveknap {
-  display: grid;
-  place-content: end;
-  padding: 10px;
-}
-
-.circle {
-  display: grid;
-  place-content: end;
-  width: 30px;
-  height: 30px;
-  background: #b57442;
-  border-radius: 50%;
+  margin: 10px;
 }
 
 .hero {
@@ -281,7 +270,7 @@ p {
 }
 
 .hero h1 {
-  /* display: grid; */
+  display: grid;
   /* SKAL DISPLAY IKKE VÆRE I LAYOUT SITE? */
   color: #fcf7e5;
   /* background-color: #3333338e; */
@@ -299,8 +288,9 @@ p {
   font-size: 20px;
   text-align: center;
   padding: 8px 16px;
-  margin: 10px;
-  width: 100%;
+  /* width: 50%; */
+  width: 384px;
+  height: 47px;
 }
 
 .CTA_link:hover {
@@ -308,12 +298,12 @@ p {
   border: 2px solid #11544a;
   color: #11544a;
 }
-
+/* 
 .CTA_link.cnc {
   width: 50%;
   max-width: 250px;
   font-size: 20px;
-}
+} */
 
 footer {
   font-family: "Saira", sans-serif;
@@ -328,4 +318,23 @@ footer {
   margin-top: 50px;
   background-color: #948974;
   box-shadow: 2px 2px 4px 4px #4b3c25;
+}
+.footer_link {
+  color: #1a1919;
+  text-decoration: none;
+  font-size: 20px;
+  width: 100%;
+}
+
+.footer_link:hover {
+  text-decoration: underline;
+}
+
+.footer_link:visited {
+  color: #11544a;
+}
+
+.footer_link:active {
+  color: #1a1919;
+  font-weight: bold;
 }
